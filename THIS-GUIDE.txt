@@ -1,0 +1,118 @@
+PLUS SIZE BEAUTY — COMPLETE LAUNCH GUIDE
+Prepared October 6, 2026
+
+WHAT IS IN THIS PACKAGE
+- index.html — homepage
+- fashion.html
+- beauty.html
+- style-guides.html
+- stories.html
+- shop.html
+- about.html
+- contact.html
+- privacy.html
+- affiliate-disclosure.html
+- styles.css
+- script.js
+- .nojekyll
+- THIS-GUIDE.txt
+
+IMPORTANT BEFORE PUBLIC LAUNCH
+1. The Ulta button is intentionally NOT connected to a made-up link. Replace it with your real approved Ulta affiliate tracking URL.
+2. The second affiliate is intentionally labeled "Second Partner" because the exact partner/tracking URL is not available here. Replace it with the real approved company and tracking URL.
+3. Replace YOUR-BUSINESS-EMAIL@example.com in contact.html and privacy.html with your public business email.
+4. Do not put passwords, account numbers, private affiliate login credentials, or other secrets in GitHub. A public repository is visible to the public.
+
+PART A — YOU ARE ALREADY ON GITHUB'S "DRAG FILES" PAGE
+1. Download and unzip Plus-Size-Beauty-Store.zip.
+2. Open the extracted Plus-Size-Beauty-Store folder.
+3. Select ALL files INSIDE that folder. Do not drag the outer folder itself and do not upload the ZIP.
+4. Drag the selected files into GitHub's "Drag files here" area.
+5. Wait until every filename appears in GitHub.
+6. Scroll to the bottom.
+7. In the commit message, use: Initial PLUS SIZE BEAUTY website
+8. Choose/leave "Commit directly to the main branch" if shown.
+9. Click "Commit changes."
+PASS RESULT: the repository Code page shows index.html, styles.css, script.js, and the other HTML files. The repository is no longer empty.
+
+PART B — PUBLISH WITH GITHUB PAGES
+1. In the repository, click Settings.
+2. In the left sidebar, click Pages.
+3. Under Build and deployment, Source: choose "Deploy from a branch."
+4. Branch: choose "main".
+5. Folder: choose "/ (root)".
+6. Click Save.
+7. Wait a few minutes and refresh the Pages settings if needed.
+PASS RESULT: GitHub reports the site is published and provides a site address. For this project it should be based on:
+https://manstanding.github.io/Plus-Size-Beauty-Store/
+
+PART C — TEST BEFORE CONNECTING THE DOMAIN
+Open the GitHub Pages address.
+PASS RESULT:
+- PLUS SIZE BEAUTY homepage loads
+- styling is pink/cream/dark and readable
+- Home, Fashion, Beauty, Style Guides, Stories, Shop, About and Contact all open
+- Privacy and Affiliate Disclosure links work in the footer
+- phone-size display stacks into one column
+The two affiliate buttons should currently warn that a real tracking link is needed. That is intentional.
+
+PART D — INSERT REAL AFFILIATE LINKS
+For Ulta:
+1. Get the approved tracking URL from your affiliate program account.
+2. Open shop.html for editing in GitHub.
+3. Find the Ulta button line containing: href="#" data-placeholder-affiliate
+4. Replace # with the full approved tracking URL.
+5. Remove: data-placeholder-affiliate
+6. Commit the change.
+For the second approved affiliate, replace "Second Partner" with the company name, update its description, replace # with its real approved tracking URL, and remove data-placeholder-affiliate.
+PASS RESULT: clicking each affiliate button goes through YOUR approved tracking link to the intended retailer.
+Never substitute a retailer's ordinary homepage URL when you intend to earn affiliate credit.
+
+PART E — CONTACT EMAIL
+Edit contact.html and privacy.html. Replace YOUR-BUSINESS-EMAIL@example.com (and the privacy placeholder wording) with the public business email you want visitors to use. Commit changes.
+PASS RESULT: no placeholder business email remains.
+
+PART F — CUSTOM DOMAIN (DO THIS AFTER THE GITHUB PAGES ADDRESS WORKS)
+You need your exact GoDaddy domain name for these steps.
+1. GitHub repository > Settings > Pages.
+2. Under Custom domain, enter your exact domain and click Save.
+3. THEN open GoDaddy > your domain > DNS / Manage DNS.
+4. For the root/apex domain, use these GitHub Pages A records:
+   @  A  185.199.108.153
+   @  A  185.199.109.153
+   @  A  185.199.110.153
+   @  A  185.199.111.153
+5. For www, create/use:
+   www  CNAME  manstanding.github.io
+   Do NOT include /Plus-Size-Beauty-Store in the CNAME target.
+6. Do not use wildcard DNS for this setup.
+7. Extra conflicting @ A/AAAA/ALIAS/ANAME records or conflicting www CNAME records can prevent correct HTTPS provisioning. Do not delete unrelated DNS records blindly; compare them first.
+8. DNS can take up to 24 hours to propagate.
+PASS RESULT: GitHub Pages accepts the custom domain and the domain opens the PLUS SIZE BEAUTY site.
+
+PART G — HTTPS
+1. Repository > Settings > Pages.
+2. After DNS/certificate setup succeeds, check "Enforce HTTPS."
+3. It can take time before the checkbox/certificate is available.
+PASS RESULT: the site opens with https:// and no browser security warning.
+
+FINAL PASS CHECK
+[ ] GitHub repository contains index.html at the root
+[ ] GitHub Pages site opens
+[ ] all navigation links work
+[ ] Ulta uses your REAL affiliate tracking URL
+[ ] second approved partner uses its REAL tracking URL
+[ ] affiliate disclosure is visible
+[ ] business email is no longer a placeholder
+[ ] custom domain opens the site
+[ ] www version works/redirects correctly
+[ ] HTTPS works
+[ ] desktop and phone layouts are readable
+[ ] no passwords or private account credentials are stored in the public repository
+
+DO NOT DO THESE THINGS
+- Do not upload the ZIP itself as the website.
+- Do not put the files one folder too deep. index.html must be at the published root.
+- Do not invent affiliate tracking links.
+- Do not put passwords/API keys/private credentials in the public repository.
+- Do not delete GoDaddy DNS records blindly.
