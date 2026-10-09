@@ -66,3 +66,18 @@ h1,h2,h3{font-family:Georgia,'Times New Roman',serif;letter-spacing:-.035em}
 footer{background:#28171e!important;color:#fff!important}footer a{color:#ffe2ed!important}footer .small{color:#f0cfdc!important}
 @media(max-width:950px){.photo-grid{grid-template-columns:repeat(2,1fr)}.hero-editorial{grid-template-columns:1fr}.hero-copy{padding:36px 16px}.hero-photo{height:340px;border-radius:0}.hero-copy h1{font-size:clamp(2.6rem,7vw,4.5rem)}}
 @media(max-width:520px){.photo-grid{grid-template-columns:1fr 1fr;gap:10px}.photo-card img{height:150px}.photo-card>div{padding:11px}.photo-card h3{font-size:1.12rem}.photo-card p{font-size:.8rem}.category-section{padding:35px 0!important}.hero-photo{height:240px}}
+
+
+/* October 2026 accessibility and mobile navigation fixes */
+:focus-visible{outline:3px solid #8c1d52;outline-offset:3px}
+img{max-width:100%;height:auto}
+a,button{touch-action:manipulation}
+@media(max-width:800px){
+ .nav{align-items:stretch;gap:.75rem}
+ nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.4rem;width:100%}
+ nav a{padding:.65rem .7rem;border:1px solid var(--line);border-radius:8px;text-align:center;background:#fff}
+ .wrap{width:min(1120px,94%)}
+ .card{padding:1.1rem}
+ .foot{grid-template-columns:1fr}
+}
+@media(max-width:400px){h1{font-size:2.35rem}.btn{width:100%;text-align:center}}
