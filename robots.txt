@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://plus-sizebeautystore.com/sitemap.xml

@@ -1,0 +1,12 @@
+PLUS SIZE BEAUTY — REDESIGNED SITE
+
+1. Unzip this file.
+2. Open index.html on your computer to preview the redesigned homepage.
+3. Open your GitHub repository manstanding/Plus-SizeBeautyStore.
+4. Add file > Upload files. Upload ALL files INSIDE this extracted folder, including JPG images, CSS, HTML, CNAME, and .nojekyll. Do NOT upload the ZIP itself.
+5. Commit changes directly to main.
+6. Actions > wait for the green check.
+7. Open https://plus-sizebeautystore.com and press Ctrl+Shift+R.
+
+IMPORTANT: Real social account URLs, Ulta and Sephora affiliate tracking links, and business email remain unverified and must not be invented. Shop affiliate buttons remain placeholders.
+Images are AI-generated illustrations; do not present depicted people as real customer testimonials.

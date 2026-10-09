@@ -1,0 +1,18 @@
+PLUS SIZE BEAUTY — UPDATE PACKAGE — October 8, 2026
+Domain: plus-sizebeautystore.com
+Repository: https://github.com/manstanding/Plus-SizeBeautyStore
+
+ALREADY VERIFIED BY USER: GitHub DNS check successful.
+ACTION NOW: In GitHub Settings > Pages, check Enforce HTTPS. Test https://plus-sizebeautystore.com and https://www.plus-sizebeautystore.com.
+
+THIS ZIP IS A REPLACEMENT WEBSITE PACKAGE, NOT PROOF OF PUBLICATION.
+It adds Sephora by name, keeps Ulta and Sephora tracking buttons inactive until real URLs are supplied, adds a safe non-clickable social section, CNAME, favicon, sitemap.xml and robots.txt. It DOES NOT invent social URLs, affiliate tracking URLs, or claim a mailbox exists.
+
+UPLOAD: Unzip to a folder. In GitHub repository Code > Add file > Upload files. Drag the CONTENTS of this folder (not the folder itself) into the upload area. GitHub may ask to replace existing files; verify the file list and commit to main. Do not delete files from GitHub just to upload. CNAME must remain plus-sizebeautystore.com. Wait for green GitHub Pages deployment. Check website pages.
+
+STILL REQUIRED:
+1. Verify HTTPS and www.
+2. Verify hello@plus-sizebeautystore.com exists and can send and receive.
+3. Obtain public profile URLs for Instagram, Facebook Page, Pinterest, TikTok and YouTube; add ONLY verified URLs.
+4. Obtain actual affiliate tracking links for Ulta (user provided affiliate ID 7893455, which is NOT a link) and Sephora. Replace placeholder href and remove data-placeholder-affiliate attributes on the two Shop buttons.
+5. Test links on mobile and desktop; check privacy/disclosure, search indexing and domain renewal.
