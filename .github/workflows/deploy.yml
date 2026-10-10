@@ -19,6 +19,33 @@ jobs:
     steps:
       - name: Checkout website
         uses: actions/checkout@v4
+      - name: Verify homepage and required assets
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          from html.parser import HTMLParser
+          class References(HTMLParser):
+              def __init__(self):
+                  super().__init__(); self.refs=[]
+              def handle_starttag(self, tag, attrs):
+                  a=dict(attrs)
+                  for k in ('src','href'):
+                      if k in a: self.refs.append(a[k])
+          pages=list(Path('.').glob('*.html'))
+          assert len(pages)>=10, f'Expected 10 pages, found {len(pages)}'
+          missing=[]
+          for page in pages:
+              parser=References(); parser.feed(page.read_text(encoding='utf-8'))
+              for ref in parser.refs:
+                  path=ref.split('?',1)[0].split('#',1)[0]
+                  if not path or path.startswith(('https://','http://','mailto:','tel:','data:','/')): continue
+                  if not (page.parent / path).exists(): missing.append(f'{page}: {path}')
+          assert not missing, 'Missing files: '+', '.join(missing)
+          homepage=Path('index.html').read_text(encoding='utf-8')
+          assert 'hero-women.jpg' in homepage and 'photo-grid' in homepage, 'Approved photography homepage not found'
+          assert Path('CNAME').read_text().strip()=='plus-sizebeautystore.com'
+          print(f'PASS: {len(pages)} pages, links/assets exist, photography homepage and domain file confirmed')
+          PY
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
       - name: Upload website files
