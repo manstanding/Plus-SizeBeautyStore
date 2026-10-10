@@ -76,3 +76,13 @@ jobs:
                   raise SystemExit('DEPLOYMENT NOT VERIFIED: check Pages source, custom domain, and DNS/hosting. Do not modify MX email records.')
               time.sleep(10)
           PY
+      - name: Diagnose domain routing if public check fails
+        if: failure()
+        run: |
+          echo "Public domain DNS:"
+          (dig +short plus-sizebeautystore.com A || true)
+          (dig +short www.plus-sizebeautystore.com CNAME || true)
+          echo "Public homepage response headers:"
+          (curl -sSIL --max-time 20 https://plus-sizebeautystore.com/ || true)
+          echo "GitHub Pages expected A records: 185.199.108.153 185.199.109.153 185.199.110.153 185.199.111.153"
+          echo "Do not change MX, SPF, DKIM or other business-email DNS records."
