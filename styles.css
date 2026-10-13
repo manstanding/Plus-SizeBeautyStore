@@ -96,3 +96,8 @@ body{background:#fffaf9;color:#321d29}
 .psb-social-choices strong{font-size:1rem;letter-spacing:.06em}
 .psb-social-choices span{margin-top:12px;line-height:1.4;font-size:.92rem}
 @media(max-width:650px){.psb-social-choices{grid-template-columns:1fr}.psb-social-choices a{min-height:95px}.photo-card img{height:260px}}
+
+/* Hero statement layered over the featured imagery */
+.reference-banner{position:relative}
+.reference-banner::after{content:'Bigger Beauty. Brighter You. ♡';position:absolute;left:3%;right:3%;bottom:5%;padding:18px 22px;background:linear-gradient(90deg,rgba(77,14,42,.91),rgba(138,30,72,.77));border:1px solid rgba(245,213,171,.6);border-radius:15px;color:#fff8ef;text-align:center;font:italic 700 clamp(20px,3vw,44px) Georgia,serif;text-shadow:0 2px 10px #361224;box-shadow:0 10px 25px #42102544;pointer-events:none}
+@media(max-width:650px){.reference-banner::after{font-size:clamp(18px,5vw,27px);padding:10px 12px}}
