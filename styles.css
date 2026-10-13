@@ -119,3 +119,25 @@ a,button{touch-action:manipulation}
 .shop-category .grid{margin-top:1.3rem}
 .shop-category .card{display:flex;flex-direction:column;align-items:flex-start}
 .shop-category .card .btn{margin-top:auto}
+
+
+/* 2026-10-13 unified brand treatment: homepage and all interior pages */
+:root{--ink:#28171e;--muted:#66545d;--cream:#fff9f8;--rose:#c52c66;--rose2:#8e2d53;--gold:#c59b55;--card:#fff;--line:#f0d8e1}
+body{background:#fff9f8;color:var(--ink)}
+.notice{background:#fde5ec!important;color:#762647!important}
+header{background:#fff!important;border-bottom:1px solid #f0d8e1}
+.brand span{color:#c52c66!important}
+nav a:hover,nav a[aria-current="page"]{color:#b5235d}
+.page-hero,.hero,.editorial-hero{background:linear-gradient(120deg,#fff2f5 0%,#f9dce4 65%,#fff9f8 100%)!important}
+.page-hero{border-bottom:1px solid #f0d8e1;padding:4rem 0 3rem}
+.page-hero h1{color:#28171e}
+.page-hero .lead{color:#66545d}
+.eyebrow,.tag{color:#b5235d}
+.card,.photo-card{background:#fff;border:1px solid #f0d8e1;box-shadow:0 8px 26px rgba(79,28,49,.07)}
+.card h3,.prose h2{color:#8e2d53}
+.btn{background:#c52c66!important}
+.btn:hover{background:#8e2d53!important}
+.shop-note{background:#fff0f5;border-left-color:#c59b55}
+.band,footer{background:#28171e!important}
+footer a{color:#ffe2ed!important}
+@media(max-width:800px){nav a{border-color:#f0d8e1;background:#fffafc}}
