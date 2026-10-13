@@ -73,3 +73,26 @@ main>section:not(.reference-top):not(.page-hero){padding-top:clamp(22px,3vw,48px
 .psb-confidence p{font-size:1.1rem;line-height:1.7;margin:0}
 .psb-text-link{font-weight:700;color:#9b1948}
 @media(max-width:580px){.psb-feature-tiles{grid-template-columns:1fr 1fr}.psb-feature-tiles img{height:105px}.psb-confidence img{height:220px}}
+
+
+/* Premium editorial storefront refinement */
+:root{--psb-plum:#51152f;--psb-rose:#a71c52;--psb-blush:#fbe8ef;--psb-champagne:#e7c68f}
+body{background:#fffaf9;color:#321d29}
+.reference-top{background:linear-gradient(135deg,#fff7f4 0%,#fbe7ef 65%,#fff7f4 100%);padding:clamp(18px,3vw,40px) 0}
+.reference-top-grid{gap:clamp(12px,2vw,25px)}
+.reference-banner,.reference-app,.reference-phone,.reference-qr{border-radius:20px;overflow:hidden;box-shadow:0 12px 34px #64193619}
+.reference-panel{border-radius:20px;box-shadow:0 12px 32px #64193612}
+.ribbon{letter-spacing:.07em}
+.categories>h2{font-family:Georgia,serif;font-size:clamp(2.4rem,4.5vw,4.5rem);line-height:1.12;color:#631936;text-align:center;margin:35px auto 18px;max-width:950px}
+.categories>p{text-align:center;font-size:1.12rem;color:#775466}
+.categories .photo-grid{gap:clamp(15px,2vw,28px)}
+.photo-card{border-radius:20px;overflow:hidden;transition:transform .2s ease,box-shadow .2s ease;box-shadow:0 12px 30px #64193614}
+.photo-card:hover,.psb-social-choices a:hover{transform:translateY(-4px);box-shadow:0 18px 40px #64193624}
+.photo-card img{height:clamp(220px,28vw,350px);object-fit:cover}
+.photo-card h3{font:700 clamp(1.5rem,2vw,2.1rem) Georgia,serif;color:#651936}
+.psb-social-intro{font-size:1.12rem;line-height:1.75;color:#624457;max-width:660px}
+.psb-social-choices{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:24px 0}
+.psb-social-choices a{display:flex;flex-direction:column;justify-content:center;min-height:135px;padding:19px;background:linear-gradient(135deg,#fff7f7,#fce3ec);border:1px solid #efd0db;border-radius:16px;color:#6b1b3e;text-decoration:none;transition:transform .2s ease,box-shadow .2s ease}
+.psb-social-choices strong{font-size:1rem;letter-spacing:.06em}
+.psb-social-choices span{margin-top:12px;line-height:1.4;font-size:.92rem}
+@media(max-width:650px){.psb-social-choices{grid-template-columns:1fr}.psb-social-choices a{min-height:95px}.photo-card img{height:260px}}
