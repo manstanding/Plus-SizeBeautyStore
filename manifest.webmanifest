@@ -2,14 +2,14 @@
   "name": "PlusSizeBeauty — PLUS SIZE BEAUTY",
   "short_name": "PlusSizeBeauty",
   "description": "Plus Size Beauty fashion, beauty and confidence",
-  "start_url": "/index.html",
-  "scope": "/",
+  "start_url": "./index.html",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#fff9f6",
   "theme_color": "#a73f67",
   "icons": [
     {
-      "src": "/app-icon.svg",
+      "src": "./app-icon.svg",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any maskable"
